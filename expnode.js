@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 
 
   app.get("/", (req, res) => {
-    res.sendStatus(200);
+    res.status(404).send('Try visiting https://github.com/Labnann/http-chat.git');
   });
   
   app.listen(port, () => {
